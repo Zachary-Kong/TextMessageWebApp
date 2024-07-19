@@ -1,0 +1,122 @@
+#app-view {
+    width: 80%;
+    height: 90vh;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 1024px) {
+    #app-view {
+        width: 90%;
+        height: 90vh;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+@media screen and (max-width: 768px) {
+    #app-view {
+        width: 100%;
+        height: 90vh;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+.message-list {
+    height: 70vh;
+    overflow-y: scroll
+}
+.room-list {
+    height: 70vh;
+    overflow-y: scroll
+}
+
+ul {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item a {
+    text-decoration: none;
+    float: left;
+    list-style: none;
+    text-align: center;
+    width: 50%;
+    line-height: 10vh;
+    background-color: blue;
+    color: white;
+}
+.menu-item a:hover {
+    background-color: cornflowerblue;
+    color: yellow;
+}
+.menu-item img {
+    filter: invert(1);
+}
+img {
+    height: 8vh;
+    padding: 1vh;
+    vertical-align: middle;
+}
+
+.page-control {
+    text-align: center;
+    line-height: 10vh;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.room-list li a {
+    text-decoration: none;
+    float: left;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    line-height: 10vh;
+    background-color: lightgrey;
+    color: Black;
+}
+.room-list li a:hover {
+    background-color: lightblue;
+    color: darkgoldenrod;
+}
+
+.message {
+    border: 2px solid lightgrey;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 1vh 6vw 0 0;
+}
+.my-message {
+    border-color: blue;
+    background-color: lightblue;
+    margin: 1vh 0 0 6vw;
+}
+.message-user {
+    font-weight: bold;
+}
+.message-text {
+    display: block;
+}
+.room-name {
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 10px 0;
+}
+textarea {
+    height: 3vh;
+}
+
+.form-field {
+    padding: 10px;
+}
+.form-field input {
+    margin: auto auto auto 5%
+}
